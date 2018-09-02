@@ -82,7 +82,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000000;
+	color: #c083d0;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1121,10 +1121,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 159.5px;
-	height: 88.5px;
+	width: 155px;
+	height: 140px;
 	background: url("../images/amineLogo.png") no-repeat center;
-	background-size: 159.5px 88.5px;
+	background-size:auto;
 }
 
 /**
@@ -1275,6 +1275,13 @@ header .logo a {
 	}
 }
 @media only screen and (max-width:768px) {
+
+	header .top-bar {
+	opacity: .1;
+	}
+	header .logo a {
+		background: none;
+	}
 	header .top-bar {
 		left: 50px;
 	}
@@ -1439,7 +1446,9 @@ header .logo a {
 		margin: 0 15px;
 	}
 }
+
 @media only screen and (max-width:768px) {
+
 	#intro {
 		min-height: 660px;
 	}
@@ -2036,6 +2045,33 @@ header .logo a {
 	text-align: center;
 }
 #cta p.lead {
+	color: #6e6e6e;
+}
+.cta-content {
+	max-width: 640px;
+}
+.cta-thumb {
+	display: inline-block;
+	margin-bottom: 1.2rem;
+}
+.cta-thumb img {
+	height: 7.8rem;
+	width: 7.8rem;
+	border-radius: 50%;
+}
+
+/** 
+ * ===================================================================
+ * 14. call-to-action section - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+#blog {
+	padding-top: 10.2rem;
+	padding-bottom: 9rem;
+	text-align: center;
+}
+#blog p.lead {
 	color: #6e6e6e;
 }
 .cta-content {
